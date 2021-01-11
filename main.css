@@ -9718,3 +9718,7 @@ a.text-dark:hover, a.text-dark:focus {
 .trending {
   flex-basis: 100%;
 }
+
+.flex-basis-100 {
+  flex-basis: 100%;
+}
