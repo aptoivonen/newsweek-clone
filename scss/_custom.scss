@@ -76,6 +76,9 @@ $newsweek-color: #f72210;
 .font-size-1375 {
   font-size: 1.375rem;
 }
+.font-size-11875 {
+  font-size: 1.1875rem;
+}
 
 .article .figure {
   position: relative;
@@ -114,5 +117,9 @@ $newsweek-color: #f72210;
   position: absolute;
   left: 0;
   bottom: 0;
+  color: $newsweek-color;
+}
+
+.newsweek-heading {
   color: $newsweek-color;
 }

@@ -9731,6 +9731,10 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 1.375rem;
 }
 
+.font-size-11875 {
+  font-size: 1.1875rem;
+}
+
 .article .figure {
   position: relative;
   width: 100%;
@@ -9768,5 +9772,9 @@ a.text-dark:hover, a.text-dark:focus {
   position: absolute;
   left: 0;
   bottom: 0;
+  color: #f72210;
+}
+
+.newsweek-heading {
   color: #f72210;
 }
