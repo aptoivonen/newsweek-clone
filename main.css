@@ -9662,6 +9662,10 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #f72210;
 }
 
+.newsweek-heading {
+  color: #f72210;
+}
+
 .header-weather {
   width: max-content;
 }
@@ -9737,6 +9741,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .article .figure {
   position: relative;
+  display: block;
   width: 100%;
   overflow: hidden;
 }
@@ -9749,9 +9754,20 @@ a.text-dark:hover, a.text-dark:focus {
   padding-bottom: 100%;
 }
 
+.article .figure-square-95 {
+  width: 95px;
+  height: 95px;
+}
+
 .article .img {
   width: 100%;
   object-fit: cover;
+}
+
+.article .img-round {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
 }
 
 .article .figure .img {
@@ -9762,12 +9778,6 @@ a.text-dark:hover, a.text-dark:focus {
   right: 0;
 }
 
-.article .img-round {
-  width: 63px;
-  height: 63px;
-  border-radius: 50%;
-}
-
 .article .topic {
   position: absolute;
   left: 0;
@@ -9775,6 +9785,65 @@ a.text-dark:hover, a.text-dark:focus {
   color: #f72210;
 }
 
-.newsweek-heading {
-  color: #f72210;
+.grid {
+  display: grid;
+  grid-gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(4, auto) 1fr;
+  }
+  .grid > * {
+    grid-column: 1 / -1;
+  }
+  .three-grid, .my-turn, .culture-travel, .us,
+  .world,
+  .business,
+  .tech-science,
+  .culture,
+  .sports {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .three-grid > header, .my-turn > header, .culture-travel > header, .us > header, .world > header, .business > header, .tech-science > header, .culture > header, .sports > header {
+    grid-column: 1 / -1;
+  }
+  .four-grid, .in-the-magazine,
+  .editors-pick {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+  .four-grid > header, .in-the-magazine > header, .editors-pick > header {
+    grid-column: 1 / -1;
+  }
+  .top-story,
+  .more-stories,
+  .latest-news,
+  .my-turn,
+  .culture-travel {
+    grid-column: 2;
+  }
+  .top-story {
+    grid-row: 1;
+  }
+  .more-stories {
+    grid-row: 4;
+  }
+  .latest-news {
+    grid-row: 5;
+  }
+  .my-turn {
+    grid-row: 2;
+  }
+  .culture-travel {
+    grid-row: 3;
+  }
+  .featured-stories {
+    grid-column: 1;
+    grid-row: 1 / 6;
+  }
 }

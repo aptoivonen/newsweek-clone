@@ -1,0 +1,45 @@
+.article .figure {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.article .figure-rect {
+  padding-bottom: 61.5%;
+}
+
+.article .figure-square {
+  padding-bottom: 100%;
+}
+
+.article .figure-square-95 {
+  width: 95px;
+  height: 95px;
+}
+
+.article .img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.article .img-round {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+}
+
+.article .figure .img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.article .topic {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: $newsweek-color;
+}

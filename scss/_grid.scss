@@ -1,0 +1,84 @@
+.grid {
+  display: grid;
+  grid-gap: 20px;
+}
+
+@include media-breakpoint-up(md) {
+  .grid {
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(4, auto) 1fr;
+  }
+
+  .grid > * {
+    grid-column: 1 / -1;
+  }
+
+  .three-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  .three-grid > header {
+    grid-column: 1 / -1;
+  }
+
+  .four-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+
+  .four-grid > header {
+    grid-column: 1 / -1;
+  }
+
+  .top-story,
+  .more-stories,
+  .latest-news,
+  .my-turn,
+  .culture-travel {
+    grid-column: 2;
+  }
+
+  .top-story {
+    grid-row: 1;
+  }
+
+  .more-stories {
+    grid-row: 4;
+  }
+
+  .latest-news {
+    grid-row: 5;
+  }
+
+  .my-turn {
+    grid-row: 2;
+    @extend .three-grid;
+  }
+
+  .culture-travel {
+    grid-row: 3;
+    @extend .three-grid;
+  }
+
+  .featured-stories {
+    grid-column: 1;
+    grid-row: 1 / 6;
+  }
+
+  .in-the-magazine,
+  .editors-pick {
+    @extend .four-grid;
+  }
+
+  .us,
+  .world,
+  .business,
+  .tech-science,
+  .culture,
+  .sports {
+    @extend .three-grid;
+  }
+}

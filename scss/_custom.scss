@@ -5,6 +5,10 @@ $newsweek-color: #f72210;
   background-color: $newsweek-color;
 }
 
+.newsweek-heading {
+  color: $newsweek-color;
+}
+
 .header-weather {
   width: max-content;
 }
@@ -70,56 +74,15 @@ $newsweek-color: #f72210;
 .font-size-9375 {
   font-size: 0.9375rem;
 }
+
 .font-size-1 {
   font-size: 1rem;
 }
+
 .font-size-1375 {
   font-size: 1.375rem;
 }
+
 .font-size-11875 {
   font-size: 1.1875rem;
-}
-
-.article .figure {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.article .figure-rect {
-  padding-bottom: 61.5%;
-}
-
-.article .figure-square {
-  padding-bottom: 100%;
-}
-
-.article .img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.article .figure .img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.article .img-round {
-  width: 63px;
-  height: 63px;
-  border-radius: 50%;
-}
-
-.article .topic {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  color: $newsweek-color;
-}
-
-.newsweek-heading {
-  color: $newsweek-color;
 }
