@@ -399,7 +399,7 @@
 
     <!-- subscribe article template -->
     <template data-targets="subscribe" data-repeats="1">
-      <article class="article d-flex flex-column mx-4">
+      <article class="article d-flex flex-column mx-md-4">
         <h3
           class="newsweek-heading align-self-start mt-2 font-size-1 text-left font-weight-bold text-uppercase"
         >
@@ -435,6 +435,48 @@
             >
               Subscribe
             </button>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <!-- Newsletter article template -->
+    <template data-targets="subscribe" data-repeats="1">
+      <article class="article d-flex flex-column mx-md-4">
+        <h3
+          class="newsweek-heading align-self-start mt-2 font-size-1 text-left font-weight-bold text-uppercase"
+        >
+          Newsletter
+        </h3>
+        <div class="d-flex flex-column flex-md-row py-4 px-md-4 bg-lightgrey">
+          <figure class="newsletter-figure">
+            <img
+              class="newsletter-img"
+              src="https://picsum.photos/id/24/300/300"
+              alt="Random image"
+            />
+          </figure>
+          <div
+            class="d-flex flex-column align-items-center align-items-md-start ml-md-4"
+          >
+            <p class="font-size-125 font-weight-bold">the Starting 5</p>
+            <p class="m-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="d-flex align-self-stretch">
+              <input
+                class="flex-basis-50"
+                type="email"
+                name="email"
+                placeholder="Email address"
+              />
+              <button
+                class="bg-newsweek font-size-11875 flex-basis-50 btn text-white text-uppercase font-weight-bold"
+              >
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
       </article>
