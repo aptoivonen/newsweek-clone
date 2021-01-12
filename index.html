@@ -169,45 +169,43 @@
               <h2 class="font-size-11875">Editor's Pick</h2>
             </header>
           </section>
-          <section id="us">
+          <section class="us border-top" id="us">
             <header>
               <h2 class="newsweek-heading mt-4 mb-2 font-size-1375">U.S.</h2>
             </header>
           </section>
-          <section id="world">
+          <section class="world border-top" id="world">
             <header>
               <h2 class="newsweek-heading mt-4 mb-2 font-size-1375">World</h2>
             </header>
           </section>
-          <section id="business">
+          <section class="business border-top" id="business">
             <header>
               <h2 class="newsweek-heading mt-4 mb-2 font-size-1375">
                 Business
               </h2>
             </header>
           </section>
-          <section id="tech-science">
+          <section class="tech-science border-top" id="tech-science">
             <header>
               <h2 class="newsweek-heading mt-4 mb-2 font-size-1375">
                 Tech & Science
               </h2>
             </header>
           </section>
-          <section id="culture">
+          <section class="culture border-top" id="culture">
             <header>
               <h2 class="newsweek-heading mt-4 mb-2 font-size-1375">Culture</h2>
             </header>
           </section>
-          <section id="sports">
+          <section class="sports border-top" id="sports">
             <header>
               <h2 class="newsweek-heading mt-4 mb-2 font-size-1375">Sports</h2>
             </header>
           </section>
-          <section id="subscribe">
+          <section class="subscribe" id="subscribe">
             <header>
-              <h2 class="newsweek-heading mt-4 mb-2 font-size-1375">
-                Subscribe & Newsletter
-              </h2>
+              <h2 class="subscribe-heading">Subscribe & Newsletter</h2>
             </header>
           </section>
         </div>
@@ -215,8 +213,8 @@
     </main>
     <footer></footer>
 
+    <!-- Big article template -->
     <template
-      id="article-template-big"
       data-targets="top-story featured-stories editors-pick"
       data-repeats="1 10 8"
     >
@@ -244,11 +242,8 @@
       </article>
     </template>
 
-    <template
-      id="article-template-square-1"
-      data-targets="my-turn culture-travel"
-      data-repeats="3 3"
-    >
+    <!-- Square picture article template -->
+    <template data-targets="my-turn culture-travel" data-repeats="3 3">
       <article class="article">
         <figure class="figure figure-square">
           <img
@@ -268,11 +263,8 @@
       </article>
     </template>
 
-    <template
-      id="article-template-square-2"
-      data-targets="more-stories latest-news"
-      data-repeats="12 12"
-    >
+    <!-- 2. Square picture article template -->
+    <template data-targets="more-stories latest-news" data-repeats="12 12">
       <article class="article d-flex pt-3 border-top">
         <figure class="figure-square-95 flex-shrink-0 pr-2">
           <img
@@ -294,11 +286,8 @@
       </article>
     </template>
 
-    <template
-      id="article-template-opinion"
-      data-targets="the-debate opinion"
-      data-repeats="2 7"
-    >
+    <!-- Opinion article template -->
+    <template data-targets="the-debate opinion" data-repeats="2 7">
       <article class="article d-flex pt-3 border-top">
         <figure class="flex-shrink-0 mr-2">
           <img
@@ -316,11 +305,8 @@
       </article>
     </template>
 
-    <template
-      id="article-template-magazine"
-      data-targets="in-the-magazine"
-      data-repeats="8"
-    >
+    <!-- Magazine article template -->
+    <template data-targets="in-the-magazine" data-repeats="8">
       <article class="article">
         <figure class="figure figure-square">
           <img
@@ -339,6 +325,118 @@
         <h3 class="mt-2 font-size-1375 text-left font-weight-bold">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto.
         </h3>
+      </article>
+    </template>
+
+    <!-- 5-article group template -->
+    <template
+      data-targets="us world business tech-science culture sports"
+      data-repeats="1 1 1 1 1 1"
+    >
+      <article class="article">
+        <figure class="figure figure-rect">
+          <img
+            class="img"
+            src="https://picsum.photos/id/47/300/200"
+            alt="Random image"
+          />
+        </figure>
+        <h3 class="font-size-1375 text-left">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto.
+        </h3>
+      </article>
+      <article class="article">
+        <figure class="figure figure-rect">
+          <img
+            class="img"
+            src="https://picsum.photos/id/48/300/200"
+            alt="Random image"
+          />
+        </figure>
+        <h3 class="font-size-1375 text-left">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto.
+        </h3>
+      </article>
+      <div>
+        <article class="article d-flex">
+          <figure class="figure figure-rect-110 flex-shrink-0">
+            <img
+              class="img"
+              src="https://picsum.photos/id/45/300/200"
+              alt="Random image"
+            />
+          </figure>
+          <h3 class="font-size-1 ml-2 text-left">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto.
+          </h3>
+        </article>
+        <article class="article d-flex pt-3 border-top">
+          <figure class="figure figure-square-110 flex-shrink-0">
+            <img
+              class="img"
+              src="https://picsum.photos/id/43/100/100"
+              alt="Random image"
+            />
+          </figure>
+          <h3 class="font-size-1 ml-2 text-left">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto.
+          </h3>
+        </article>
+        <article class="article d-flex pt-3 border-top">
+          <figure class="figure figure-square-110 flex-shrink-0">
+            <img
+              class="img"
+              src="https://picsum.photos/id/42/100/100"
+              alt="Random image"
+            />
+          </figure>
+          <h3 class="font-size-1 ml-2 text-left">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto.
+          </h3>
+        </article>
+      </div>
+    </template>
+
+    <!-- subscribe article template -->
+    <template data-targets="subscribe" data-repeats="1">
+      <article class="article d-flex flex-column mx-4">
+        <h3
+          class="newsweek-heading align-self-start mt-2 font-size-1 text-left font-weight-bold text-uppercase"
+        >
+          Subscribe
+        </h3>
+        <div
+          class="d-flex flex-column flex-md-row align-items-center align-items-md-stretch py-4 px-md-4 bg-lightgrey"
+        >
+          <figure class="figure figure-subscribe">
+            <img
+              class="img-subscribe img-subscribe-1"
+              src="https://picsum.photos/id/24/300/300"
+              alt="Random image"
+            />
+            <img
+              class="img-subscribe img-subscribe-2"
+              src="https://picsum.photos/id/25/300/300"
+              alt="Random image"
+            />
+          </figure>
+          <div
+            class="d-flex flex-column align-items-center align-items-md-start ml-md-4"
+          >
+            <p class="font-size-125 font-weight-bold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa.
+            </p>
+            <p class="m-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button
+              class="bg-newsweek font-size-11875 btn text-white text-uppercase font-weight-bold"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
       </article>
     </template>
 

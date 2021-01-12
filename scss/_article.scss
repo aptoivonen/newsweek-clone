@@ -18,6 +18,21 @@
   height: 95px;
 }
 
+.article .figure-square-110 {
+  width: 110px;
+  height: 110px;
+}
+
+.article .figure-rect-110 {
+  width: 110px;
+  height: 73px;
+}
+
+.article .figure-subscribe {
+  width: 255px;
+  height: 255px;
+}
+
 .article .img {
   width: 100%;
   object-fit: cover;
@@ -27,6 +42,22 @@
   width: 63px;
   height: 63px;
   border-radius: 50%;
+}
+
+.article .img-subscribe {
+  position: absolute;
+  width: 170px;
+  height: 227px;
+}
+
+.article .img-subscribe-1 {
+  top: 0;
+  left: 0;
+}
+
+.article .img-subscribe-2 {
+  top: 15px;
+  left: 85px;
 }
 
 .article .figure .img {

@@ -5,6 +5,10 @@ $newsweek-color: #f72210;
   background-color: $newsweek-color;
 }
 
+.bg-lightgrey {
+  background-color: #f4f5f6;
+}
+
 .newsweek-heading {
   color: $newsweek-color;
 }
@@ -67,6 +71,10 @@ $newsweek-color: #f72210;
   }
 }
 
+.subscribe-heading {
+  font-size: 0;
+}
+
 .flex-basis-100 {
   flex-basis: 100%;
 }
@@ -77,6 +85,10 @@ $newsweek-color: #f72210;
 
 .font-size-1 {
   font-size: 1rem;
+}
+
+.font-size-125 {
+  font-size: 1.25rem;
 }
 
 .font-size-1375 {
