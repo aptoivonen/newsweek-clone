@@ -1,0 +1,72 @@
+@import "icon";
+$newsweek-color: #f72210;
+
+.bg-newsweek {
+  background-color: $newsweek-color;
+}
+
+.bg-lightgrey {
+  background-color: #f4f5f6;
+}
+
+.newsweek-heading {
+  color: $newsweek-color;
+}
+
+.header-weather {
+  width: max-content;
+}
+
+.header-icon {
+  @extend %newsweek-icon;
+  width: 132px;
+  height: 20px;
+  color: transparent;
+  font-size: 0;
+  fill: white;
+}
+
+@include media-breakpoint-up(lg) {
+  .header-icon {
+    width: 396px;
+    height: 60px;
+  }
+}
+
+.header-searchbox {
+  width: 60px;
+  height: 54px;
+  font: 400 13px Arial;
+}
+
+.search-item {
+  order: -1;
+}
+
+@include media-breakpoint-up(lg) {
+  .search-item {
+    order: 0;
+  }
+}
+
+.newsweek-navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.newsweek-navbar-toggler-icon {
+  @extend %newsweek-toggler-icon;
+}
+
+.newsweek-navbar-content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 220px;
+}
+
+@include media-breakpoint-up(lg) {
+  .newsweek-navbar-content {
+    position: static;
+    width: auto;
+  }
+}
