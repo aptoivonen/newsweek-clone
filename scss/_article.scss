@@ -84,3 +84,9 @@
   height: 170px;
   object-fit: cover;
 }
+
+@include media-breakpoint-up(lg) {
+  .article .newsletter-img {
+    height: 100%;
+  }
+}

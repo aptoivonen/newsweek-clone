@@ -6,6 +6,12 @@
   flex-basis: 50%;
 }
 
+@include media-breakpoint-up(md) {
+  .flex-basis-md-50 {
+    flex-basis: 50%;
+  }
+}
+
 .font-size-9375 {
   font-size: 0.9375rem;
 }
