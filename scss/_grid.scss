@@ -82,3 +82,15 @@
     @extend .three-grid;
   }
 }
+
+@include media-breakpoint-up(lg) {
+  .subscribe {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+  }
+
+  .subscribe > header {
+    grid-column: 1 / -1;
+  }
+}

@@ -442,14 +442,16 @@
 
     <!-- Newsletter article template -->
     <template data-targets="subscribe" data-repeats="1">
-      <article class="article d-flex flex-column mx-md-4">
+      <article class="article d-flex flex-column mx-md-4 mx-lg-0">
         <h3
           class="newsweek-heading align-self-start mt-2 font-size-1 text-left font-weight-bold text-uppercase"
         >
           Newsletter
         </h3>
-        <div class="d-flex flex-column flex-md-row py-4 p-md-0 bg-lightgrey">
-          <figure class="newsletter-figure flex-basis-md-50">
+        <div
+          class="newsletter-content d-flex flex-column flex-md-row py-4 p-md-0 bg-lightgrey"
+        >
+          <figure class="newsletter-figure flex-basis-md-50 m-lg-0">
             <img
               class="newsletter-img"
               src="https://picsum.photos/id/24/300/300"
@@ -459,14 +461,14 @@
           <div
             class="flex-basis-md-50 d-flex flex-column align-items-center ml-md-4"
           >
-            <p class="font-size-125 font-weight-bold">the Starting 5</p>
+            <p class="font-size-125 font-weight-bold mt-lg-4">the Starting 5</p>
             <p class="text-md-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
 
-            <div class="d-flex align-self-stretch px-3 pl-md-0">
+            <div class="d-flex flex-lg-column align-self-stretch px-3 pl-md-0">
               <input
-                class="flex-basis-50 form-control"
+                class="flex-basis-50 form-control mb-lg-2"
                 type="email"
                 name="email"
                 placeholder="Email address"
