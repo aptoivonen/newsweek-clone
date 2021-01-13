@@ -1,5 +1,4 @@
 @import "icon";
-$newsweek-color: #f72210;
 
 .bg-newsweek {
   background-color: $newsweek-color;
@@ -18,12 +17,11 @@ $newsweek-color: #f72210;
 }
 
 .header-icon {
-  @extend %newsweek-icon;
+  @include newsweek-icon(#fff);
   width: 132px;
   height: 20px;
   color: transparent;
   font-size: 0;
-  fill: white;
 }
 
 @include media-breakpoint-up(lg) {

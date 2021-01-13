@@ -1,0 +1,8 @@
+@import "icon";
+
+.footer-icon {
+  @include newsweek-icon($newsweek-color);
+  display: block;
+  width: 236px;
+  height: 36px;
+}
