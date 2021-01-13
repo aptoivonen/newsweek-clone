@@ -84,6 +84,23 @@
 }
 
 @include media-breakpoint-up(lg) {
+  .grid {
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
+
+  .the-debate {
+    grid-row: 1;
+  }
+
+  .opinion {
+    grid-row: 2 / 6;
+  }
+
+  .the-debate,
+  .opinion {
+    grid-column: 3;
+  }
+
   .subscribe {
     display: grid;
     grid-template-columns: 2fr 1fr;
