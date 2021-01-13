@@ -9663,6 +9663,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.font-size-75 {
+  font-size: 0.75rem;
+}
+
 .font-size-9375 {
   font-size: 0.9375rem;
 }
@@ -9959,4 +9963,11 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
   width: 236px;
   height: 36px;
+}
+
+.sm-icon {
+  width: 26px;
+  height: 26px;
+  color: #666666;
+  fill: currentColor;
 }
